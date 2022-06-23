@@ -1,0 +1,285 @@
+/*so the first one called is ul is the one that we style in order to move around the entire navigation inside the website
+the 2nd list item is when we want to move around the individual links, inside the ul.
+This may help to create a horizontal nav ?
+And the last one is when we want to style the  actual text of the link.
+
+theres going to be dafault stylings for the browser
+ur working with so u want to get rid of that so do at top.
+
+the star symbol and curly brckets mean we will style everything
+inside the website, with this styling. didn't write 0 px cuz 0 is the same as it would be in percentage. Now lets create an
+actual menu with the items next to each other instead of underneath each other and we dont wnat the underline under the links
+
+now lets put the menu items next to each other. to do this go inside the list item and say display: inline-block
+
+now lets make it look decent inside the top box. center the nav vertically inside our nav tags and do that by
+going in the ul li item\
+
+ */
+
+ p{ 
+	margin-bottom: 15px;
+ }
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+/* website main header
+*/
+.main-header{
+margin-top: 50px;
+font-size: 75px;
+font-weight: 400;
+font-family: 'Courier New', Courier, monospace;
+}
+
+ /* change background color of entire websie */
+ body {
+ 	background-color: #eeeeee;
+ }
+
+ /*here lets style the nav tag*/
+ nav {
+ 	width: 100%;
+ 	height: 100px;
+ 	background-color: #fff;
+
+ }
+
+ /*access the wrapper classs. 0px from l and r auto from left and r. auto says how much space do we have on
+ 	l and the r and then it takes that spacing and helps automatically gets cenetered. to
+ 	have more of a customized setup more t r b l
+		*/
+
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	background:blue;
+}
+
+
+
+/*if uwanted to move the nav to the right side and make space say for a logo can go into the ul tag to move the whole
+	unorered list. this helped move the entire nav. if u did this for nav it will mess up cuz
+	navs background color will start 60px to the left
+		*/
+
+ul {
+	margin-left: 0px;
+}
+
+/*1st thing to do is to go inside the list item and get rid of the bullet points inside of the list
+ w/ the list-style to none
+
+ can get rid of the gap between the links that isnt clickable. 1st say float left inside the list item. that puts no gap
+ between the links. next style the text inside the menu and to down where we have the anchor tag
+  */
+
+ul li { /* li stands for list item. list it. ul means unordered list. remove the bullets from ul*/
+	list-style: none;
+	display: inline-block;
+	float:left;
+
+	/*centering nav vertically and making it look nicer. set lh to 100px coz the nav height is 100px. This will always center
+	vertically no matter the text size of our navigation.
+	 */
+	 line-height: 100px;
+
+}
+
+
+ul li a {
+
+		/*want to be able to click the link even if u have ur cursor on top of the link
+		*/
+	display: block;
+	text-decoration:none;
+	/* gets rid of the decoration, which is the underline. could also use this inside our multiplcation symbol at top, which
+	will take care of all the links in the website to make sure that none of them has a underline undearneath it,
+	but for today hell use it inside his anchor tag
+	 */
+
+	 /*change things to make the links look nice after getting them all together with no gap between links. doing all
+	 the below helped get rid of the weird formatting below of the ul. now want to create some kind of box at the top
+	 to have the menu inside off.
+  	*/
+ 	font-size: 14px;
+	font-family: arial;
+	color: #1e1e1e;
+
+	/*create some space in between the navigarion links so u want to create a padding. create a 0 px padding cuz we dont need it
+	. we already centered the navigation inside our navigationand then create a 20 px padding on the left and right side
+  */
+  	padding: 0 20px;
+	}
+	/* now lets create some pages to link to
+  */
+
+
+	/*hover affects... create em for the actual text insid ethe navigation
+	copy everything inside the stylesheet with the anchor tag paste it below and delete everything. now change the color in
+	this new tag to something else. the a:hover basically means that when u hover ontop of this styling above, its gunna
+	change some parts of the styling to whatevers inside the new code below. so its gunna change the color from #1e1 to red
+		*/
+
+	ul li a:hover {
+	color: red;
+
+	}
+
+  .gallery-links-h2{
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform:  uppercase;
+    text-align: center;
+    padding: 20px;
+  }
+/*display the items from left to right and if no more room down to next line. change a coupole of things set a flex basis   */
+.gallery-links{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/*change a coupole of things set a flex basis. now we need to tell the images how big they should actually be. The flex-basis CSS property sets the initial main size of a flex item*/
+.gallery-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+/*accessing the img inside of the galleryimg class/ width will now become 100% of the anchor tag. so it rescales together with the flexbox
+
+to fix uneven spacing change the precison of the diff elems go up to gallery lik */
+.gallery-img img{
+  width: 300px;
+
+}
+
+/* .img-show{
+	width: 1000px;
+	height: 700px;
+} */
+
+/* slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+/* .overall-slideshow-container{
+	background-color: rgb(192, 207, 255);
+} */
+
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slide-img1{
+	width: 75%;
+	height: 400px;	
+	margin: auto;
+	display: block;
+}
+.slide-img{
+	width: 65%;
+	height: 400px;
+  	margin: auto;
+  	display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+/*rn the images actually rescale with the browsers size cuz we set it to a percent rn.will scale height accroind to widhtj
+
+for desktop copy the gallery img and paste in below */
+
+  @media only screen and (min width: 762px) {
+    .gallery-links-h2 {
+      font-size: 28px;
+    }
+    .gallery-img {
+      flex-basis: 300px;
+    }
+
+  }
+
