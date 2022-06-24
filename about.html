@@ -4,7 +4,9 @@
     <title>Menu creation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="bg">
@@ -18,18 +20,15 @@
 		
 		-->
     <nav>
-      <!-- now that weve done all the implementing and designing and styling lets link to the subpagees we want to. 
-			change the hypereference of Home... Then copy everything inside index.html and past it into the other subpages 
-			so that u can link each of them to the stylesheet
-		-->
-
-      <!-- create a text that says which page we are inside of 
-		-->
-
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+       </label>
+      <label class="logo">Arsal Khan</label>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About me </a></li>
+        <li><a class="active" href="about.html">About me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -51,5 +50,6 @@
 		
 		-->
   </div>
+
   </body>
 </html>

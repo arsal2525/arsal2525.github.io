@@ -4,11 +4,11 @@
     <title>Menu creation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="bg">
-
     <!-- create a menu using unordered list. inside it we have list and these will be the links inside the menu-. 
     at first had buller points and line undr it. so to change this style ur ul in .css 
 		
@@ -19,21 +19,75 @@
 		
     -->
     <nav>
-      <!-- now that weve done all the implementing and designing and styling lets link to the subpagees we want to. 
-      change the hypereference of Home... Then copy everything inside index.html and past it into the other subpages 
-      so that u can link each of them to the stylesheet
-    -->
-
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+       </label>
+      <label class="logo">Arsal Khan</label>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About me </a></li>
+        <li><a class="active"href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About me</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="page-content">
       <h1>Portfolio</h1>
       <p>Internship Work</p>
+      <p>Work Assignments and Projects
+        I was given a challenge to design the company website. I was to replicate the design pretty much pixel perfect to what was expected and I was able to do that
+        <!-- <img src="/images/ssection1.png" alt="not here" class="img-show">
+        <img src="/images/ssection23.png" alt="not here" class="img-show">
+        <img src="/images/stop.png" alt="not here" class="img-show">
+        <img src="/images/stour.png" alt="not here" class="img-show"> -->
+      </p>
+
+
+  <div class="overall-slideshow-container">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="display: block;">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/stour.png" class="slide-img1">
+          <div class="text">Century Business Solutions Web Tour</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/stop.png" class="slide-img">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/ssection1.png" class="slide-img">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/ssection23.png" class="slide-img">
+          <div class="text">Caption Four</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+    </div>
+        <p>School Projects</p>
+      </div>
+
       <p>
         Overview: At my internship at Century Business Solutions I applied so
         much of the conceptual knowledge I learned through school and
@@ -94,61 +148,5 @@
           Adobe XD, to facilitate project management and design
         </li>
       </p>
-
-      <p>Work Assignments and Projects
-      I was given a challenge to design the company website. I was to replicate the design pretty much pixel perfect to what was expected and I was able to do that
-      <!-- <img src="/images/ssection1.png" alt="not here" class="img-show">
-      <img src="/images/ssection23.png" alt="not here" class="img-show">
-      <img src="/images/stop.png" alt="not here" class="img-show">
-      <img src="/images/stour.png" alt="not here" class="img-show"> -->
-    </p>
-
-
-<div class="overall-slideshow-container">
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade" style="display: block;">
-        <div class="numbertext">1 / 4</div>
-        <img src="images/stour.png" class="slide-img1">
-        <div class="text">Century Business Solutions Web Tour</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="images/stop.png" class="slide-img">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="images/ssection1.png" class="slide-img">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="images/ssection23.png" class="slide-img">
-        <div class="text">Caption Four</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    
-  </div>
-      <p>School Projects</p>
-    </div>
-  </div>
-
   </body>
 </html>

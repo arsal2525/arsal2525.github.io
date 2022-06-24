@@ -24,25 +24,25 @@ going in the ul li item\
    margin: 0;
  }
  
- .bg {
-   /* The image used */
-   background-image: url("images/bluestarsky.jpeg");
- 
-   /* Full height */
-   height: 100%; 
- 
-   /* Center and scale the image nicely */
+ body {
+	background-image: url("images/morningsky.jpeg");
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+  }
+ /* .bg {
+   background-image: url("");
+   height: 100%; 	
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
- }
+ } */
 
  p{ 
 	margin-bottom: 15px;
-	color: white;
+	color: black;
  }
  li {
-	color: white;
+	color: black;
  }
 
  *{
@@ -63,12 +63,13 @@ margin-top: 20px;
 font-size: 75px;
 font-weight: 400;
 font-family: 'Courier New', Courier, monospace;
-color: white;
+color: black;
 text-align: center;
 }
 
 .moreinfo-message{
 	text-align: center;
+	
 }
 
  /* change background color of entire websie */
@@ -98,70 +99,116 @@ text-align: center;
 	unorered list. this helped move the entire nav. if u did this for nav it will mess up cuz
 	navs background color will start 60px to the left
 		*/
-
-ul {
-	
-	margin-left: 0px;
-}
-
-/*1st thing to do is to go inside the list item and get rid of the bullet points inside of the list
- w/ the list-style to none
-
- can get rid of the gap between the links that isnt clickable. 1st say float left inside the list item. that puts no gap
- between the links. next style the text inside the menu and to down where we have the anchor tag
-  */
-
-ul li { /* li stands for list item. list it. ul means unordered list. remove the bullets from ul*/
-	list-style: none;
-	display: inline-block;
-
-	/*centering nav vertically and making it look nicer. set lh to 100px coz the nav height is 100px. This will always center
-	vertically no matter the text size of our navigation.
-	 */
-	 line-height: 100px;
-
-}
-
-
-ul li a {
-
-		/*want to be able to click the link even if u have ur cursor on top of the link
-		*/
-	display: block;
-	text-decoration:none;
-	/* gets rid of the decoration, which is the underline. could also use this inside our multiplcation symbol at top, which
-	will take care of all the links in the website to make sure that none of them has a underline undearneath it,
-	but for today hell use it inside his anchor tag
-	 */
-
-	 /*change things to make the links look nice after getting them all together with no gap between links. doing all
-	 the below helped get rid of the weird formatting below of the ul. now want to create some kind of box at the top
-	 to have the menu inside off.
-  	*/
- 	font-size: 14px;
-	font-family: arial;
-	color: white;
-
-	/*create some space in between the navigarion links so u want to create a padding. create a 0 px padding cuz we dont need it
-	. we already centered the navigation inside our navigationand then create a 20 px padding on the left and right side
-  */
-  	padding: 0 20px;
-	}
-	/* now lets create some pages to link to
-  */
-
-
-	/*hover affects... create em for the actual text insid ethe navigation
-	copy everything inside the stylesheet with the anchor tag paste it below and delete everything. now change the color in
-	this new tag to something else. the a:hover basically means that when u hover ontop of this styling above, its gunna
-	change some parts of the styling to whatevers inside the new code below. so its gunna change the color from #1e1 to red
-		*/
-
-	ul li a:hover {
-	color: red;
-
-	}
-
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+    }
+  
+    body{
+      font-family: montserrat;
+    }
+    nav{
+      background: #0082e6;
+      height: 80px;
+      width: 100%
+    }
+    label.logo{
+      font-size: 35px;
+      color: white;
+      line-height: 80px;/*added height to from the top of nav*/
+      padding: 0 100px;
+      font-weight: bold;
+    }
+  
+    nav ul{
+      float: right; /*made whole nav go to right*/
+      margin-right: 20px;/*brought it off the edge*/
+    }
+  
+    nav ul li{ 
+      /* to make the nav horizontal have to edit the ul li
+       and do display inline bloc */
+     display:inline-block;
+     line-height: 80px;
+     margin: 0 5px; /* added spacing between items*/
+    }
+  
+    nav ul li a{ 
+      /* to make the nav horizontal have to edit the ul li
+       and do display inline bloc */
+    color: white; 
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    }
+  
+    a.active, a:hover{
+      background:#1b9bff;
+      transition: 0.5s;
+    }
+  
+    .checkbtn {
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      display: none;
+    }
+  
+    #check{
+      display: none;
+    }
+  
+    @media (max-width:952px){
+      label.logo{
+        font-size: 30px ;
+        padding-left: 50px;
+      } 
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+  
+    @media (max-width:858px){
+      label.logo{
+        font-size: 30px ;
+        padding-left: 50px; 
+      }
+      nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      .checkbtn{
+        display: block;
+      }
+      ul { 
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        transition: all .3s ;
+      }
+      a.hover, a.active{
+        background:none;
+        color: #0082e6;
+      }
+  
+      #check:checked ~ ul{
+        left:-1000px;
+      }
+  
+    }
   .gallery-links-h2{
     font-family: Catamaran;
     font-size: 28px;
@@ -208,6 +255,7 @@ to fix uneven spacing change the precison of the diff elems go up to gallery lik
   max-width: 900px;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 
 /* Hide the images by default */
