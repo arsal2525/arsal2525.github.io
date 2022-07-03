@@ -17,19 +17,31 @@ going in the ul li item\
 
  */
 
- /* bg image */
+/* bg image */
 
- body, html {
-   height: 100%;
-   margin: 0;
+/* body, html {
  }
  
  body {
 	background-image: url("images/morningsky.jpeg");
 	background-repeat: no-repeat;
-	background-repeat: no-repeat;
-  }
- /* .bg {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  } */
+
+html,
+body {
+  height: 100%;
+  background-size: cover;
+  background: url("images/3876877.jpg") no-repeat center center fixed;
+  
+}
+* {
+  box-sizing: border-box;
+}
+/* .bg {
    background-image: url("");
    height: 100%; 	
    background-position: center;
@@ -37,330 +49,137 @@ going in the ul li item\
    background-size: cover;
  } */
 
- p{ 
-	margin-bottom: 15px;
-	color: black;
- }
- li {
-	color: black;
- }
-
- *{
- 	margin: 0;
- 	padding: 0;
- }
-.hi-message{
-	text-align: center;
-	padding-top: 60px;
+.ph {
+  clear: both;
 }
-.title-message{
-	text-align: center;
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-styling {
+  width: 100%;
+  height: auto;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+p {
+  margin-bottom: 15px;
+}
+li {
+  color: black;
+}
+
+.row-styling {
+  text-align: center;
+}
+
+.img-w {
+  width: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.hi-message {
+  text-align: center;
+  padding-top: 60px;
+}
+.title-message {
+  text-align: center;
 }
 /* website main header
 */
-.main-header{
-margin-top: 20px;
-font-size: 75px;
-font-weight: 400;
-font-family: 'Courier New', Courier, monospace;
-color: black;
-text-align: center;
+.main-header {
+  margin-top: 20px;
+  font-size: 75px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
 }
 
-.moreinfo-message{
-	text-align: center;
-	
+.moreinfo-message {
+  text-align: center;
 }
 
- /* change background color of entire websie */
- 
- /*here lets style the nav tag*/
- nav {
-	text-align: center;
- 	width: 100%;
- 	height: 100px;
-
- }
-
- /*access the wrapper classs. 0px from l and r auto from left and r. auto says how much space do we have on
- 	l and the r and then it takes that spacing and helps automatically gets cenetered. to
- 	have more of a customized setup more t r b l
-		*/
-
-.wrapper {
-	margin: 0 auto;
-	width: 1000px;
-	background:blue;
+.col-style {
+  padding: 0px;
 }
 
+.home-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 350px;
+}
 
+/* trying stuff */
 
+/* .word {
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em "tahoma";
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+} */
+
+.wp-heading {
+  font-size: 30px;
+  /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
+}
+.we-heading {
+  font-size: 24px;
+  /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
+}
+
+/* change background color of entire websie */
+
+/* .colm-style {
+  list-style: none;
+  height: 50px;
+  background-color: transparent;
+  margin: auto auto;
+} */
+
+.links-p {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+  color: blue;
+}
+
+.links-p:hover {
+  color: #ff00bd;
+}
 /*if uwanted to move the nav to the right side and make space say for a logo can go into the ul tag to move the whole
 	unorered list. this helped move the entire nav. if u did this for nav it will mess up cuz
 	navs background color will start 60px to the left
 		*/
-    *{
-      padding: 0;
-      margin: 0;
-      text-decoration: none;
-      list-style: none;
-    }
-  
-    body{
-      font-family: montserrat;
-    }
-    nav{
-      background: #0082e6;
-      height: 80px;
-      width: 100%
-    }
-    label.logo{
-      font-size: 35px;
-      color: white;
-      line-height: 80px;/*added height to from the top of nav*/
-      padding: 0 100px;
-      font-weight: bold;
-    }
-  
-    nav ul{
-      float: right; /*made whole nav go to right*/
-      margin-right: 20px;/*brought it off the edge*/
-    }
-  
-    nav ul li{ 
-      /* to make the nav horizontal have to edit the ul li
-       and do display inline bloc */
-     display:inline-block;
-     line-height: 80px;
-     margin: 0 5px; /* added spacing between items*/
-    }
-  
-    nav ul li a{ 
-      /* to make the nav horizontal have to edit the ul li
-       and do display inline bloc */
-    color: white; 
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
-    }
-  
-    a.active, a:hover{
-      background:#1b9bff;
-      transition: 0.5s;
-    }
-  
-    .checkbtn {
-      font-size: 30px;
-      color: white;
-      float: right;
-      line-height: 80px;
-      margin-right: 40px;
-      display: none;
-    }
-  
-    #check{
-      display: none;
-    }
-  
-    @media (max-width:952px){
-      label.logo{
-        font-size: 30px ;
-        padding-left: 50px;
-      } 
-      nav ul li a{
-        font-size: 16px;
-      }
-    }
-  
-    @media (max-width:858px){
-      label.logo{
-        font-size: 30px ;
-        padding-left: 50px; 
-      }
-      nav ul li{
-        display:block;
-        margin: 50px 0;
-        line-height: 30px;
-      }
-      nav ul li a{
-        font-size: 20px;
-      }
-      .checkbtn{
-        display: block;
-      }
-      ul { 
-        position: fixed;
-        width: 100%;
-        height:100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: 0px;
-        text-align: center;
-        transition: all .3s ;
-      }
-      a.hover, a.active{
-        background:none;
-        color: #0082e6;
-      }
-  
-      #check:checked ~ ul{
-        left:-1000px;
-      }
-  
-    }
-  .gallery-links-h2{
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 600;
-    color: #111;
-    text-transform:  uppercase;
-    text-align: center;
-    padding: 20px;
-  }
-/*display the items from left to right and if no more room down to next line. change a coupole of things set a flex basis   */
-.gallery-links{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-/*change a coupole of things set a flex basis. now we need to tell the images how big they should actually be. The flex-basis CSS property sets the initial main size of a flex item*/
-.gallery-img {
-  flex-basis: 90%;
-  margin: 10px;
-}
-/*accessing the img inside of the galleryimg class/ width will now become 100% of the anchor tag. so it rescales together with the flexbox
-
-to fix uneven spacing change the precison of the diff elems go up to gallery lik */
-.gallery-img img{
-  width: 300px;
-
+* {
+  padding: 0;
+  margin: 0;
 }
 
-/* .img-show{
-	width: 1000px;
-	height: 700px;
-} */
-
-/* slideshow */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-
-/* .overall-slideshow-container{
-	background-color: rgb(192, 207, 255);
-} */
-
-.slideshow-container {
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-  z-index: -1;
+body {
+ font-family: Verdana, sans-serif ;
+ color: white;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.img-h {
+  width: 500px;
+  height: 700px;
 }
 
-.slide-img1{
-	width: 75%;
-	height: 400px;	
-	margin: auto;
-	display: block;
+.nav-item-p {
+  align-content: center;
 }
-.slide-img{
-	width: 65%;
-	height: 400px;
-  	margin: auto;
-  	display: block;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.3s;
-}
-
-@keyframes fade {
-  from {opacity: .5}
-  to {opacity: 1}
-}
-
-/*rn the images actually rescale with the browsers size cuz we set it to a percent rn.will scale height accroind to widhtj
-
-for desktop copy the gallery img and paste in below */
-
-  @media only screen and (min width: 762px) {
-    .gallery-links-h2 {
-      font-size: 28px;
-    }
-    .gallery-img {
-      flex-basis: 300px;
-    }
-
-  }
-

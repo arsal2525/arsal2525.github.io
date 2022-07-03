@@ -4,48 +4,94 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Flexbox Excersize</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Arsal Khan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="portfolio.html"
+                >Porfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- trying stuff -->
+    <div class="word"></div>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="page-content">
+            <p class="hi-message">Hi there, my name is</p>
+            <h1 class="main-header">Arsal Khan</h1>
+            <p class="title-message">
+              I am Web Developer and Software Engineer
+            </p>
+            <p class="moreinfo-message">
+              I am recent graduate from California State Fullerton in Computer
+              Science who also has an Associates in Engineering from Orange
+              Coast College. I love getting the oppurtunity to delve into a new
+              project as it gives me a chance to put my skills to the test
+            </p>
+          </div>
+          <img class="home-img" src="images/ak3.PNG" alt="image not showing">
+        </div>
+      </div>
+    </div>
+    <!--  github tokem :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 
+ -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-    <div class="bg">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <label class="logo">Arsal Khan</label>
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="page-content">
-        <p class="hi-message">Hi there, my name is</p>
-        <h1 class="main-header">Arsal Khan</h1>
-        <p class="title-message">I am Web Developer and Software Engineer</p>
-        <p class="moreinfo-message">
-          I am recent graduate from California State Fullerton in Computer
-          Science who also has an Associates in Engineering from Orange Coast
-          College. I love getting the oppurtunity to delve into a new project as
-          it gives me a chance to put my skills to the test
-        </p>
-      </div>
-      <!--  github tokem :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 
- -->
-    </div>
   </body>
 </html>
