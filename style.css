@@ -137,6 +137,11 @@ li {
   font-size: 30px;
   /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
 }
+
+.sp-heading {
+  font-size: 30px;
+  /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
+}
 .we-heading {
   font-size: 24px;
   /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
@@ -150,6 +155,8 @@ li {
   background-color: transparent;
   margin: auto auto;
 } */
+
+
 
 .links-p {
   text-decoration: none;
@@ -182,4 +189,30 @@ body {
 
 .nav-item-p {
   align-content: center;
+}
+
+#spotfolio{
+  display: inline-block;
+  width: 5px; 
+
+}
+
+.links-wp2 {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+  color: blue;
+}
+
+.links-wp2:hover {
+  color: #ff00bd;
+}
+
+.sp-heading {
+  font-size: 30px;
+}
+
+.main-heads{
+  margin-top: 30px;  
+  text-align: center;
 }
