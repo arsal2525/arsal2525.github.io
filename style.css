@@ -36,7 +36,6 @@ body {
   height: 100%;
   background-size: cover;
   background: url("images/3876877.jpg") no-repeat center center fixed;
-  
 }
 * {
   box-sizing: border-box;
@@ -101,7 +100,6 @@ li {
 /* website main header
 */
 .main-header {
-
   font-size: 75px;
   font-weight: 400;
   color: black;
@@ -124,8 +122,7 @@ li {
   height: 350px;
 }
 
-
-.center-text{
+.cent-text {
   text-align: center;
 }
 /* trying stuff */
@@ -160,8 +157,6 @@ li {
   margin: auto auto;
 } */
 
-
-
 .links-p {
   text-decoration: none;
   font-size: 36px;
@@ -182,8 +177,8 @@ li {
 }
 
 body {
- font-family: Verdana, sans-serif ;
- color: white;
+  font-family: Verdana, sans-serif;
+  color: white;
 }
 
 .img-h {
@@ -195,10 +190,9 @@ body {
   align-content: center;
 }
 
-#spotfolio{
+#spotfolio {
   display: inline-block;
-  width: 5px; 
-
+  width: 5px;
 }
 
 .links-wp2 {
@@ -216,18 +210,19 @@ body {
   font-size: 30px;
 }
 
-.main-heads{
-  margin-top: 30px;  
+.main-heads {
+  margin-top: 30px;
   text-align: center;
 }
 
-.navbar{
-  background-color: green!important;
+.navbar {
+  background-color: green !important;
 }
 
-.sidenav-styling{
+.sidenav-styling {
   background-color: transparent;
 }
+
 /* 
 h1 {
   position: relative;
