@@ -37,6 +37,10 @@ body {
   background-size: cover;
   background: url("images/3876877.jpg") no-repeat center center fixed;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -104,6 +108,7 @@ li {
 /* website main header
 */
 .main-header {
+  padding-top: 60px;
   font-size: 75px;
   font-weight: 400;
   color: black;
@@ -377,3 +382,79 @@ span.carousel-control-prev-icon {
 /* background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300FF00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E) !important; */
 
 
+.waviy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+.waviy span {
+  margin-top: 75px;
+  position: relative;
+  display: inline-block;
+  font-size: 110px;
+  color: #382221;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  /* cathces some of the background */
+  background: linear-gradient(45deg,red,orange);
+  border-radius: 50%;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.social-buttons{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+a, a:focus { color: blue }
+a:hover, a:focus:hover { color: white } */
