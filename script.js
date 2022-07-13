@@ -27,6 +27,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// document.getElementById('wportfolio').scrollIntoView({inline: 'center'});
+
+
 // slideIndex = 0;
 // showSlides2();
 // function showSlides2() {
