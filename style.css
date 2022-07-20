@@ -140,7 +140,7 @@ li {
 div.anchor {
   display: block;
   position: relative;
-  top: 60px;
+  bottom: 0px;
   visibility: hidden;
 }
 
@@ -179,6 +179,13 @@ div.anchor3 {
 .we-heading {
   font-size: 24px;
   /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
+}
+
+.fed-heading{
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 26px;
+
 }
 
 #wportfolio {
