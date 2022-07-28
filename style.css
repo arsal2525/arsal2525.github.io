@@ -202,6 +202,11 @@ div.anchor3 {
   visibility: hidden;
 }
 
+.wap{
+  list-style-type:square;
+  /* padding: 0; */
+}
+
 .peopleCarouselImg img {
   width: auto;
   height: 525px;
