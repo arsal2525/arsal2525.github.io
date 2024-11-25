@@ -52,9 +52,6 @@ html {
    background-size: cover;
  } */
 
-.center-text {
-  text-align: center;
-}
 .ph {
   clear: both;
 }
@@ -180,6 +177,12 @@ div.anchor3 {
   /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
 }
 
+.year-heading {
+  font-size: 23px;
+  text-align: center;
+
+}
+
 .sp-heading {
   font-size: 30px;
   /* background: linear-gradient(70deg, rgb(83 94 109 / 43%), pink); */
@@ -193,6 +196,16 @@ div.anchor3 {
   font-size: 20px;
   font-style: italic;
   margin-top: 26px;
+  text-align: center;
+}
+
+.subtitle-heading{
+  font-size: 25px;
+  font-style: italic;
+}
+
+.project-heading{
+ font-size: 19px; 
 }
 
 #wportfolio {
@@ -261,11 +274,11 @@ body {
 .nav-item-p {
   align-content: center;
 }
-
+/* 
 #spotfolio {
   display: inline-block;
   width: 5px;
-}
+} */
 
 .links-wp2 {
   /* text-decoration: none;
@@ -567,8 +580,14 @@ span.carousel-control-prev-icon {
   align-items: center;
   justify-content: center;
 }
+/* 
+.align-dates {
+  display: block;
+  text-align: center;
+} */
 
 
 /* 
 a, a:focus { color: blue }
 a:hover, a:focus:hover { color: white } */
+

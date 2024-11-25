@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Work Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- create a menu using unordered list. inside it we have list and these will be the links inside the menu-. 
+    at first had buller points and line undr it. so to change this style ur ul in .css 
+		
+    to create help create a box around the list use the nav container and place the ul inside the nav tags. We use the 
+    nav tags for a menu cuz the browser actually identitfies this section as a menu so its a good idea not to use a pair 
+    of div tags which is what i was thinking to create a section. cuz the div tag doesnt really identify what were 
+    inserting inside of it. Helps the browser see what inside ur code
+		
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Arsal Khan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workportfolio.html"> Work Porfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="schoolportfolio.html"
+                >School Portfolio</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text"> </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <br />
+          <h1>School Portfolio</h1>
+          <br />
+          <p class="subtitle-heading">Projects</p>
+          <p class="project-heading">Best Bus Route</p>
+          <p>
+            This program can take numerous possible bus routes from users and
+            will plan a route that gets the user to their destination as fast as
+            possible. The program allows for the capablities to save and load
+            the route so they can view them later as necessary.
+          </p>
+
+          <div
+            id="carouselExampleDark3"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark3"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark3"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark3"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active peopleCarouselImg"
+                data-bs-interval="10000"
+              >
+                <img
+                  src="images/creating6.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Bus Route Finder Main Menu</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="images/finding7.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Creating Possible Bus Route Options</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item peopleCarouselImg">
+                <img
+                  src="images/loading3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Saving and then Loading User Data</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- wont go auto -->
+
+          <p class="project-heading pt-4">Candy Shop Register</p>
+          <p>
+            This program servers as a Candy Shop Register with the additional
+            functionality of being able to log the transactions that are made on
+            it. This register allows the cashier to check out the customer,
+            prints the receipt, and records the transation for later viewing if
+            needed.
+          </p>
+
+          <!-- CAOROUSEL 4 -->
+          <div
+            id="carouselExampleDark4"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark4"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark4"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item peopleCarouselImg active"
+                data-bs-interval="10000"
+              >
+                <img src="images/candym1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <!-- <h5 class="purpcol">Candy Shop Cashier Menu</h5> -->
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img src="images/candyr1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Customer Receipt</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark4"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark4"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- CAROUSEL 6 -->
+          <p class="project-heading pt-4">Morality and Personality Test</p>
+          <p>
+            This test allows for people to have some fun with our morality and
+            personality tests. The user answers questions and our program
+            assesses the morality and/or personality of a person, based on the
+            answers provided.
+          </p>
+          <p>
+            We established a criteria for what we considered good moral
+            characteristics were, or nice personality characterisitcs, and
+            evaluate users based on what answers are chosen.
+          </p>
+          <p>
+            This program saves all the data collected from different users in a
+            csv and shows the average results a person gets each time either
+            test is completed.
+          </p>
+
+          <div
+            id="carouselExampleDark6"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item peopleCarouselImg active"
+                data-bs-interval="10000"
+              >
+                <img
+                  src="images/loadingscreen.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Opening Animation</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img src="images/mint1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Main Menu</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img src="images/mq1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Example of a Morality Test Question</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="images/mtestresult.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Results</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="images/permint1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Personality Test Set Up</h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img src="images/persq1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">
+                    Example of a Personality Test Question
+                  </h5>
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="images/ptestresult.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <!-- <h5 class="purpcol">Results</h5> -->
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark6"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark6"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- CAROUSEL 5 -->
+          <p class="project-heading mt-4">Contact Phonebook</p>
+          <p>
+            This interface allows for users to enter in peoples numbers and we
+            will start saving all of your favourite contacts. This program
+            serves as a digital phonebook.
+          </p>
+          <div
+            id="carouselExampleDark5"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark5"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark5"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item peopleCarouselImg active"
+                data-bs-interval="10000"
+              >
+                <img
+                  src="images/phonebookm2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <!-- <h5 class="purpcol">Main menu that takes in your people of interests information, and creates a phonebook</h5> -->
+                  <p></p>
+                </div>
+              </div>
+              <div
+                class="carousel-item peopleCarouselImg"
+                data-bs-interval="2000"
+              >
+                <img
+                  src="images/phonestored2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="purpcol">Phonebook with Your Contacts Added</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark5"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark5"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
